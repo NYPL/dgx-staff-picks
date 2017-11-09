@@ -2,6 +2,7 @@
 
 ### v2.3.2
 > > Updating the Header to version 2.2.0.
+> > Updating GA initialization configurations.
 
 ### v2.3.1
 > > Updating the Header to version 2.1.1.
