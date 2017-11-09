@@ -10,7 +10,7 @@ import alt from 'dgx-alt-center';
 import Iso from 'iso';
 
 import routes from '../app/routes/routes.jsx';
-import { ga } from 'dgx-react-ga';
+import { gaUtils } from 'dgx-react-ga';
 
 import FeatureFlags from 'dgx-feature-flags';
 
@@ -25,9 +25,9 @@ window.onload = () => {
     alt.bootstrap(state);
 
     if (!window.ga) {
-      console.log('Analytics not available - loading through React.');
       const gaOpts = { debug: false, titleCase: false };
-      ga.initialize('UA-1420324-3', gaOpts);
+
+      gaUtils.initialize('UA-1420324-3', gaOpts);
     }
 
     const appHistory = useRouterHistory(createBrowserHistory)();
