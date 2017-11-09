@@ -10,7 +10,7 @@ import alt from 'dgx-alt-center';
 import Iso from 'iso';
 
 import routes from '../app/routes/routes.jsx';
-import { gaUtils } from 'dgx-react-ga';
+import { config, gaUtils } from 'dgx-react-ga';
 
 import FeatureFlags from 'dgx-feature-flags';
 
@@ -25,9 +25,10 @@ window.onload = () => {
     alt.bootstrap(state);
 
     if (!window.ga) {
-      const gaOpts = { debug: false, titleCase: false };
+      const isProd = process.env.NODE_ENV === 'production';
+      const gaOpts = { debug: !isProd, titleCase: false };
 
-      gaUtils.initialize('UA-1420324-3', gaOpts);
+      gaUtils.initialize(config.google.code(isProd), gaOpts);
     }
 
     const appHistory = useRouterHistory(createBrowserHistory)();
