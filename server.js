@@ -2,7 +2,6 @@ import path from 'path';
 import fs from 'fs';
 import express from 'express';
 import compress from 'compression';
-import analytics from './analytics.js';
 import colors from 'colors';
 
 import webpack from 'webpack';
@@ -88,12 +87,10 @@ app.use('/', (req, res) => {
           isProduction: isProduction,
           metatags: renderedTags,
           markup: iso.render(),
-          gaCode: analytics.google.code(isProduction),
           appEnv: process.env.APP_ENV || 'no APP_ENV',
           assets: buildAssets,
           appTitle: appConfig.appTitle,
           favicon: appConfig.favIconPath,
-          gaCode: analytics.google.code(isProduction),
           webpackPort: WEBPACK_DEV_PORT,
           appEnv: process.env.APP_ENV,
           endpoint: res.locals.data.endpoint,
