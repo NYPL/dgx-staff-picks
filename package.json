@@ -27,7 +27,7 @@
     "url": "https://bitbucket.com/issues/"
   },
   "dependencies": {
-    "@nypl/dgx-header-component": "2.2.0",
+    "@nypl/dgx-header-component": "git+https://bitbucket.org/NYPL/dgx-header-component.git#integrate-fundraising-component",
     "@nypl/dgx-react-footer": "0.4.0",
     "assets-webpack-plugin": "3.4.0",
     "autoprefixer-loader": "2.0.0",
