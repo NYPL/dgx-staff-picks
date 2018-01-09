@@ -1,6 +1,6 @@
 {
   "name": "dgx-staff-picks",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "NYPL Staff Picks",
   "main": "index.js",
   "scripts": {
@@ -27,8 +27,8 @@
     "url": "https://bitbucket.com/issues/"
   },
   "dependencies": {
-    "@nypl/dgx-header-component": "2.4.0",
-    "@nypl/dgx-react-footer": "0.4.0",
+    "@nypl/dgx-header-component": "2.4.2",
+    "@nypl/dgx-react-footer": "0.4.1",
     "assets-webpack-plugin": "3.4.0",
     "autoprefixer-loader": "2.0.0",
     "axios": "0.12.0",
@@ -47,7 +47,7 @@
     "dgx-alt-center": "git+ssh://bitbucket.org/NYPL/dgx-alt-center.git#master",
     "dgx-feature-flags": "git+https://git@bitbucket.org/NYPL/dgx-feature-flags.git#master",
     "dgx-react-ga": "git+ssh://bitbucket.org/NYPL/dgx-react-ga.git#master",
-    "ejs": "2.3.2",
+    "ejs": "2.5.5",
     "eslint": "0.24.0",
     "eslint-loader": "0.14.1",
     "eslint-plugin-react": "2.6.3",
