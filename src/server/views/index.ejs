@@ -72,6 +72,15 @@
 
     <!-- OptinMonster -->
     <script>var om1044_12468,om1044_12468_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){om1044_12468_poll(function(){if(window['om_loaded']){if(!om1044_12468){om1044_12468=new OptinMonsterApp();return om1044_12468.init({"a":12468,"staging":0,"dev":0,"beta":0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="https://a.optmstr.com/app/js/api.min.js",o.async=true,o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;om1044_12468=new OptinMonsterApp();om1044_12468.init({"a":12468,"staging":0,"dev":0,"beta":0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script>
+    <!-- OptinMonster JavaScript Event for accessibility compliance -->
+    <script>
+      jQuery(document).ready( function($){
+        $(document).on('OptinMonsterOnClose', function( event, data, object ){
+          $('#om-' + data.optin).attr('aria-hidden','true');
+          $('#om-' + data.optin).hide();
+        });
+      });
+    </script>
     <!-- /OptinMonster -->
   </body>
 </html>
