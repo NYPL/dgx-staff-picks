@@ -1,5 +1,9 @@
 ## Changelog
 
+### v2.3.7
+> Updating the Header component to version 2.4.7.
+> Adding OptinMonster for advocacy 2018.
+
 ### v2.3.6
 > Updating the Header component to version 2.4.5.
 
@@ -17,7 +21,7 @@
 > Updating GA initialization configurations.
 
 ### v2.3.1
-> > Updating the Header to version 2.1.1.
+> Updating the Header to version 2.1.1.
 
 ### v2.3.0
 > Adding Feature Flag for displaying the List view by default, through Optimizely.
