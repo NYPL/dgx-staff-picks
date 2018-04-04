@@ -1,5 +1,8 @@
 ## Changelog
 
+### v2.3.8
+> Adding GA pageviews and fixing twitter homepage image meta tag.
+
 ### v2.3.7
 > Updating the Header component to version 2.4.7.
 > Adding OptinMonster for advocacy 2018.
