@@ -24,8 +24,8 @@ const App = (props) => {
       'staff-picks/' },
     { name: 'twitter:title', content: 'Staff Picks | The New York Public Library' },
     { name: 'twitter:description', content },
-    { name: 'twitter:image', content: '/books-music-dvds/recommendations/staff-picks/src/client/' +
-      'images/shelftalker.4.2.png' },
+    { name: 'twitter:image', content: 'https://www.nypl.org/books-music-dvds/recommendations/' +
+      'staff-picks/src/client/images/shelftalker.4.2.png' },
   ];
   let about = null;
 

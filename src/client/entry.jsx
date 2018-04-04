@@ -37,5 +37,7 @@ window.onload = () => {
       <Router history={appHistory}>{routes.client}</Router>,
       container
     );
+
+    gaUtils.trackPageview(window.location.pathname);
   });
 };
