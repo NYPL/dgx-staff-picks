@@ -1,3 +1,7 @@
+# Deprecated
+
+As of September 2024, this repo is deprecated.
+
 # Staff Picks
 
 # To set up
